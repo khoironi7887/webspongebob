@@ -1,0 +1,172 @@
+@import url('css/reset.css');
+
+@import url(http://fonts.googleapis.com/css?family=Montez);
+@import url(http://fonts.googleapis.com/css?family=Sofadi+One);
+
+html, 
+body{
+	height: 100%;
+	width: 100%;
+	font-family: 'Sofadi One', cursive;
+}
+
+a{
+	text-decoration: none;
+	color: #666;
+}
+
+
+/* --- Banner -------------------------- */
+#banner{
+	width: 100%;
+	height: 70%;
+	background: url(img/spon.jpg) 0 0 repeat;
+	background-attachment: fixed;
+	position: relative;
+}
+
+	#banner #overlay{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: url(img/overlay.png) 0 100% repeat-x;
+	}
+
+
+	#logo{
+		width: 100%;
+		position: absolute;
+		bottom: 10%;
+		z-index: 5;
+		text-align: center;
+	}
+	#logo img {
+		cursor: pointer;
+		display: inline-block;
+		width: 128px;
+		height: 128px;
+		border: 3px solid rgba(255,255,255,.5);
+		border-radius: 50%;
+	}
+		#logo img:hover{
+			border: 3px solid rgba(255,255,255,.7);
+		}
+	#logo h1{
+		margin: 0 auto;
+		text-align: center;
+		font-family: 'Montez', cursive;
+		font-size: 100px;
+		color: #eee;
+		text-shadow: 1px 1px 1px #000, 1px 2px 3px #555;
+	}
+
+	#logo #jobdesc{
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin: 5px auto;
+		color: #eee;
+		font-size: 20px;
+		text-shadow: 1px 1px 1px #000;
+	}
+	
+	/* --- end -Banner -------------------------- */
+
+/* --- Gallery ------------------------- */
+.gallery{
+	display: table;
+	width: 900px;
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.gallery .box{
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	border: 2px solid #eee;
+}
+
+.gallery .box img{
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	border: 2px solid #eee;
+}
+
+.gallery .box img:hover{
+	opacity: .8;
+}
+
+/* ---end-Gallery ------------------------- */
+/*---------section---------*/
+
+section{
+	width: 900px;
+	max-width: 900px;
+	margin: 40px auto;
+}
+
+	section span{
+		background: #C09A7F;
+		padding: 4px;
+		border-radius: 0 5px 0 0;
+		color: #eee;
+		font-size: 12px;
+	}
+	
+	.section{
+		display: table;
+		width: 100%;
+	}
+	
+	.section .content{
+		display: table-row;
+		width: 100%
+	}
+	
+	.section .box {
+		display: table-cell;
+		padding: 10px;
+		width:31.3333%;
+	}
+	
+	.section .box:nth-child(1){
+		background: #eee;
+		border: 5px solid #C09A7F;
+	}
+	
+	.section .box:nth-child(3){
+		border-radius: 0 0 10px 0;
+	}
+	
+	.section .box h3{
+		padding: 10px;
+		font-size: 18px;
+		font-weight: bold;
+	}
+	
+	.section .box p{
+		padding: 10px;
+		line-height: 1.5em;		
+	}
+	
+	.section .box img{
+		width:100%;
+		max-width: 100%;
+		height: auto;
+		border-radius: 10px;
+	}
+	.section .box img:hover{
+		opacity: .8;
+	}
+	
+/*---------end-section---------*/
+
+
+
+
+
